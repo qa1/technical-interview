@@ -3,19 +3,24 @@
 * Concurrency vs Multi-Threading vs Async vs Parallelism
 * Data-Structures
 	* ConcurrentDictionary
-	* ConcurrenctQueue
+	* ConcurrentQueue
 	* Channels
 * Async & Task Internals
 	* At least, how many threads are needed to run an async task?
 	* GetAwaiter().GetResult() vs .Result
 	* Task vs ValueTask
 	* Task.WhenAll & Task.WhenAny
+	* FooAsync.Wait() & FooAsync.WaitAsync()
 	* Why is `async void` bad? When do we have to use it?
 	* Task.Run
 		* What does it do?
 		* Does Task.Run() create a new Thread?!
 		* Exception-Handling in Fire & Forget scenarios
 	* Thread.Sleep vs Task.Delay
+	* Long-running threads (ThreadPool effects, Implementation via TaskFactory)
+	* ExecutionContext vs SynchronizationContext (aspnetcore breaking changes ?)
+	* AsyncLocal
+	* Asynchronous design patterns like AsyncLazy
 	* CancellationToken
 		* Usages
 		* Creating a cancellation-token using CancellationTokenSource
